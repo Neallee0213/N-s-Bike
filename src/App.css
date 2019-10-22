@@ -1,33 +1,73 @@
-.App {
-  text-align: center;
+:root {
+  --mainBlue: #2a2a72;
+  --lightBlue: #009ffd;
+  --mainWhite: #f3f3f3;
+  --mainDark: #232528;
+  --mainYellow: #ffa400;
+  --lightDark: #262526;
+  --pColor: #aaa;
+}
+html {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Oswald", sans-serif;
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hero{
+  background-image: url("./imgs/hero.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
 }
-
-.App-link {
-  color: #61dafb;
+.contact_hero{
+  background-image:url("./imgs/contact.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
 }
+.text-title {
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.text-blue {
+  color: var(--mainBlue);
+}
+.text-bright {
+  color: var(--lightBlue);
+}
+.btn-black{
+  background: transparent;
+  text-transform: capitalize;
+  font-size: .8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border:.1rem solid var(--mainWhite) !important;
+}
+.btn-black:hover{
+  background: var(--mainWhite) !important;
+  color: var(--mainWhite) !important;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.cart-icon{
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainYellow);
+}
+.googlemap{
+  display: block;
+  height: 500px;
+  margin-top:200px;
+}
+.cart{
+  height: 70vh;
 }
