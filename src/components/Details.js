@@ -11,11 +11,7 @@ export default class Details extends Component {
                         value.detailProduct;
                     return (
                         <div className="container detail py-5 mt-5">
-                            {/* <div className="row">
-                                <div className="col-10 mx-auto text-center text-slanted text-blue my-5">
-                                    {title}
-                                </div>
-                            </div> */}
+
                             <div className="row my-5">
                                 <div className="col-10 mx-auto col-lg-6 my-3">
                                     <img src={img} alt="img" className="img-fluid" />
